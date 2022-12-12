@@ -94,10 +94,9 @@ article {
     padding: 0px;
 }
 article > h1 {
-    font: normal normal 3em var(--font2);
+    font: bold normal 2em var(--font2);
     padding: 20px 15px 15px 15px;
-    color: var(--cor4);
-    width: 50%;
+    color: #226d44;
 }
 article > p {
     text-align: justify;
