@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Cloister';
+            src: url(fontes/CloisterBlack.ttf) format('truetype');
+
+            /* Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        @font-face {
+        font-family: 'Centurion';
+        src: url(fonts/The\ Centurion.otf) format('opentype'), url(fonts/The\ Centurion.ttf) format('truetype');
+        }
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+        font-family: 'Cloister', Times, serif;
+        font-size: 2.5em;
+        }
+        h2 {
+        font: normal normal 3em 'Centurion', times, serif;
+        }
+    </style>
+</head>
+<body>
+   <h1>Testanto uma fonte gótica A Á a á</h1> 
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus reprehenderit consectetur voluptatem sequi, fugiat voluptatum rem, dolores id architecto voluptates beatae accusantium molestias ex ea! Voluptates quis provident unde? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti exercitationem aliquid sint voluptatum perspiciatis officia iure dolore libero, dolores optio, accusamus quia doloremque labore ratione sed iste ipsum nisi dolor?</p>
+
+   <h2>Testando outra fonte A Á a á</h2>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati delectus nostrum voluptate recusandae, labore officiis! Error quibusdam dolores sit ipsam nam, totam, magnam mollitia reiciendis qui, harum necessitatibus eveniet aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magnam rerum eum quis tempora optio adipisci, minus laborum assumenda, suscipit, consequuntur voluptates nemo error. Error magnam saepe veniam dicta soluta!</p>
+</body>
+</html>

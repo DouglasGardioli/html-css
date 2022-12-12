@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        #texto > p {
+        display: none;
+        }
+        #texto:hover > p {
+        display: block;
+        background-color: red;
+        color: white;
+        width: 200px;
+        } 
+        #texto:hover {
+        color: red;
+        }
+        .bra {
+        font-size: 2em;
+        }
+        .bra:hover {
+        color: yellow;
+        }
+        .sil {
+        color: green;
+        }
+        #mostrar > #hexa {
+        display: none;
+        }
+        #mostrar:hover {
+        color: yellow;
+        } 
+        #mostrar:hover > #hexa {
+        margin: auto;
+        display: block;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        }
+        #mostrar {
+        text-align: center;
+        }
+        #hexa {
+        text-align: center;
+        font-size: 2.5em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="texto">Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+
+    
+    <div id="mostrar">
+        <p class="bra">BRASIL</p>
+        <p id="hexa" class="sil">HEXACAMPEÃO!</p>
+    </div>
+</body>
+</html>

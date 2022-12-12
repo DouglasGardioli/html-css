@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+       body {
+        background-color: darkgray;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+        width: 600px;
+        padding: 10px;
+        background-color: white;
+        margin: auto;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 3px 5px 4px 0px rgba(0, 0, 0, 0.302);
+        }
+        header > h1 {
+        text-align: center;
+        }
+        nav {
+        background-color: grey;
+        padding: 3px;
+        box-shadow: 3px 5px 4px 0px rgba(0, 0, 0, 0.302);
+        }
+        header > nav {
+        text-align: center;
+        }
+        nav > a {
+        font-size: 1.2em;
+        text-decoration: none;
+        color: white;
+        margin: 0px 20px 0px 20px;
+        padding: 3px 4px 3px 4px;
+        }
+        nav > a:hover {
+            color: black;
+        }
+        main {
+        width: 600px;
+        padding: 10px;
+        background-color: white;
+        margin: 10px auto 0px auto;
+        box-shadow: 3px 5px 4px 0px rgba(0, 0, 0, 0.302);
+        border-radius: 0px 0px 10px 10px;
+        }
+        article {
+        background-color: lightgray;
+        padding: 5px;
+        }
+        article > h2 {
+        text-indent: 1em;
+        }
+        article > p {
+        text-indent: 1.5em;
+        text-align: justify;
+        padding: 0px 5px 0px 5px;
+        }
+        aside > p {
+        text-align: right;
+        font-size: 0.7em;
+        }
+        footer {
+        background-color: grey;
+        margin: auto;
+        text-align: center;
+        }
+        footer > p {
+        padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#" class="menulinks">link</a>
+            <a href="#" class="menulinks">link</a>
+            <a href="#" class="menulinks">link</a>
+            <a href="#" class="menulinks">link</a>
+            <a href="#" class="menulinks">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi enim laboriosam odio fugit, neque magnam aperiam explicabo possimus praesentium mollitia, nobis iure, consequatur aspernatur eligendi veritatis deleniti sit vel culpa?
+                </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nobis laboriosam, hic et quaerat eum corrupti perspiciatis libero consequuntur dicta eveniet quos qui ab voluptate provident veniam accusamus non eius?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero unde fugiat, dolor accusamus dolores recusandae eligendi alias quis in ipsa iusto accusantium tempore exercitationem modi ea eum suscipit perspiciatis dicta.</p>
+                <aside>
+                    <p>Artigo escrito por Douglas Gardioli</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Douglas Gardioli</p>
+    </footer>
+</body>
+</html>
