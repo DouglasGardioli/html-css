@@ -31,7 +31,7 @@ header > h1 {
 header > p {
     padding-bottom: 50px;
     font-family: var(--font1);
-    font-size: 0.5em;
+    font-size: 1em;
 }
 main p {
     font: normal 3.5vw var(--font3);
