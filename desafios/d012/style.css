@@ -40,7 +40,9 @@ section p {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
+}
+section.normal {
+    padding: 30px;
 }
 section.image0 {
     background-color: black;
@@ -48,11 +50,13 @@ section.image0 {
     background-size: cover;
     background-attachment: fixed;
     background-position: right center;
+    padding-left: 20px;
 }
 section.image0 > p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.514);
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 section#img01 {
     background-image: url(imagens/background001.jpg);
