@@ -34,8 +34,8 @@ header > p {
     font-size: 0.8em;
 }
 section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
 }
 section p {
     font: normal 3.5vw var(--font3);
