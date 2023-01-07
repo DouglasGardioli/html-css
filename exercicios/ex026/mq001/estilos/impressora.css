@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* ESTILO PARA IMPRESSÃO */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+header > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    text-align: center;
+}
+
+menu {
+    display: none;
+}
+article::after {
+    font: normal 0.7em Arial, Helvetica, sans-serif;
+    content: 'Este artigo foi impresso no site github.com/DouglasGardioli';
+    text-align: right;
+}
+main > article > h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
