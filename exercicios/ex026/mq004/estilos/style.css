@@ -1,10 +1,31 @@
 @charset "UTF-8";
 
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-image: url(../imagens/back-phone.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh;
+}
+main {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.801);
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+h1 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: auto;
 }
 
 img#celular { display: block; }
@@ -13,6 +34,29 @@ img#impressora { display: none; }
 img#desktop { display: none; }
 img#tv { display: none; }
 
+@media print {
+    img#celular { display: none; }
+    img#tablet { display: none; }
+    img#impressora { display: block; }
+    img#desktop { display: none; }
+    img#tv { display: none; }   
+    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: none;
+        color: darkgrey;
+    }
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after {
+        content: 'Este conteúdo impresso foi retirado do site > github.com/douglasgardioli <';
+        font-size: 0.8em;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) { 
     img#celular { display: none; }
