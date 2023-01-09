@@ -1,34 +1,51 @@
 @charset "UTF-8";
 
-/* Versão mobile first */
-
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-}
-body, html {
+body {
+    background-image: url(../imagens/back-phone.jpg);
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
 }
-body {
-    background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-position: center center;
-    background-size: cover;
+
+img#celular { display: block; }
+img#tablet { display: none; }
+img#impressora { display: none; }
+img#desktop { display: none; }
+img#tv { display: none; }
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+    img#celular { display: none; }
+    img#tablet { display: block; }
+    img#impressora { display: none; }
+    img#desktop { display: none; }
+    img#tv { display: none; }
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
 }
-main {
-    background-color: rgba(255, 255, 255, 0.801);
-    width: 90vw;
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    img#celular { display: none; }
+    img#tablet { display: none; }
+    img#impressora { display: none; }
+    img#desktop { display: block; }
+    img#tv { display: none; }
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
 }
-h1 {
-    text-align: center;
-    color: black;
-    font-size: 2em;
-}
-img {
-    display: block;
-    margin: auto;
+
+@media screen and (min-width: 1200px) {
+    img#celular { display: none; }
+    img#tablet { display: none; }
+    img#impressora { display: none; }
+    img#desktop { display: none; }
+    img#tv { display: block; }
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
 }
