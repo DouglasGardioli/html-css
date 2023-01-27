@@ -16,15 +16,15 @@ header h1 {
     padding: 15px;
 }
 span#burger {
-    background-color: rgb(82, 82, 82);
+    background-color: #525252;
     display: block;
     color: white;
     padding: 10px;
     text-align: center;
+    user-select: none;
+    transition-duration: 0.5s;
 }
 span#burger:hover {
-    background-color: white;
-    color: black;
     cursor: pointer;
 }
 menu {
